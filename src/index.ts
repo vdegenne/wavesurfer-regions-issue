@@ -1,5 +1,4 @@
 import '@material/web/button/filled-button.js';
-// import '@material/web/divider/divider.js';
 import {html, LitElement, TemplateResult} from 'lit';
 import {customElement, query, state} from 'lit/decorators.js';
 import styles from './styles.css.js';

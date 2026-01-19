@@ -1,7 +1,6 @@
 import {html, LitElement, PropertyValues} from 'lit';
 import {customElement, query, state} from 'lit/decorators.js';
 import WaveSurfer from 'wavesurfer.js';
-import Minimap from 'wavesurfer.js/dist/plugins/minimap.esm.js';
 import RegionsPlugin, {
 	type Region,
 } from 'wavesurfer.js/dist/plugins/regions.js';
@@ -27,12 +26,7 @@ export class WaveformElement extends LitElement {
 					normalize: true,
 					autoCenter: true,
 					hideScrollbar: true,
-					plugins: [
-						Minimap.create({
-							height: 24,
-						}),
-						regions,
-					],
+					plugins: [regions],
 				});
 			} else {
 				this.containerElement.innerHTML = '';
@@ -41,9 +35,7 @@ export class WaveformElement extends LitElement {
 	}
 
 	render() {
-		return html`<!---->
-			<div id="container"></div>
-			<!---->`;
+		return html`<div id="container"></div>`;
 	}
 
 	#replayRegion!: Region;
