@@ -76,7 +76,7 @@ export class MainView extends LitElement {
 			<div class="flex">
 				<div style="width:600px">
 					<video
-						src="/slow_motion_dog_run.mp4"
+						src="./slow_motion_dog_run.mp4"
 						class="w-full"
 						@timeupdate=${() => {
 							this.time = this.video.currentTime;

@@ -1,4 +1,6 @@
-## Run the demo
+[Demonstration here](https://vdegenne.github.io/wavesurfer-regions-issue/)
+
+## Run the demo (locally)
 
 Install dependencies + running vite.
 
