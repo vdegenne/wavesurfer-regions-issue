@@ -38,13 +38,13 @@ export class MainView extends LitElement {
 			},
 		},
 		{
-			title: 'Play video (2s) + pause + waiting a little bit (5s)',
+			title: 'Play video (2s) + pause + waiting a little bit (4s)',
 			after: 'It fails more often if we wait a bit after the intial pause.',
 			fct: async () => {
 				this.video.play();
 				await sleep(2000);
 				this.video.pause();
-				await sleep(5000);
+				await sleep(4000);
 			},
 		},
 		{
@@ -56,11 +56,11 @@ export class MainView extends LitElement {
 			},
 		},
 		{
-			title: 'Playing the video again',
+			title: 'Resume the video',
 			before: html`If the region appeared the demo failed (refresh the page to
 				try again). <br />
 				However if the region is not here it's an issue. But it re-appears if we
-				play the video again.`,
+				resume the video.`,
 			fct: async () => {
 				this.video.play();
 				await sleep(1000);

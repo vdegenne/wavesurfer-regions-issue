@@ -22,8 +22,8 @@ export class WaveformElement extends LitElement {
 					container: this.containerElement,
 					media: this.video,
 					minPxPerSec: 300,
-					dragToSeek: true,
-					normalize: true,
+					// dragToSeek: true,
+					// normalize: true,
 					autoCenter: true,
 					hideScrollbar: true,
 					plugins: [regions],
@@ -43,7 +43,6 @@ export class WaveformElement extends LitElement {
 		return (this.#replayRegion = regions.addRegion({
 			start,
 			end,
-			color: '#FFFF0055',
 		}));
 	}
 	updateRegion(start: number, end: number) {
