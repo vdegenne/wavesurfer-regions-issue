@@ -1,5 +1,17 @@
 {
-  "devDependencies": {
-    "vite": "^7.3.1"
-  }
+	"devDependencies": {
+		"@material/web": "^2.4.1",
+		"lit": "^3.3.2",
+		"vite": "^7.3.1",
+		"wavesurfer.js": "^7.12.1",
+		"wireit": "^0.14.12"
+	},
+	"scripts": {
+		"dev": "wireit"
+	},
+	"wireit": {
+		"dev": {
+			"command": "vite"
+		}
+	}
 }
